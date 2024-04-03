@@ -62,7 +62,7 @@ fi
    cmake \
   	 -DCMAKE_C_COMPILER="gcc-$GCC_VERS" \
   	 -DCMAKE_CXX_COMPILER="g++-$GCC_VERS" \
-  	 -DCMAKE_INSTALL_PREFIX=$(realpath ../tools) \
+  	 -DCMAKE_INSTALL_PREFIX=$(realpath ..)/tools \
   	 -DCMAKE_C_FLAGS=" -Wno-unused-function " \
   	 -DCMAKE_CXX_FLAGS=" -Wno-unused-function "  \
   	 -DCMAKE_CPP_FLAGS=" -Wno-unused-function " \
@@ -77,7 +77,7 @@ fi
    cmake -DLLVM_BUILD_32_BITS=ON \
 	 -DCMAKE_C_COMPILER="gcc-$GCC_VERS"\
 	 -DCMAKE_CXX_COMPILER="g++-$GCC_VERS"\
-	 -DCMAKE_INSTALL_PREFIX=$(realpath ../tools/32) \
+	 -DCMAKE_INSTALL_PREFIX=$(realpath ..)/tools/32 \
 	 -DCMAKE_C_FLAGS="-m32 -Wno-unused-function " \
 	 -DCMAKE_CXX_FLAGS="-m32 -Wno-unused-function "  \
 	 -DCMAKE_CPP_FLAGS="-m32 -Wno-unused-function " \
